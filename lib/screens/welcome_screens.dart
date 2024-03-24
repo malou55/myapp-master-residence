@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api, sized_box_for_whitespace, prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 //import 'package:resi_gestion_app/screens/home_page.dart';
 import 'package:resi_gestion_app/welcome_login.dart';

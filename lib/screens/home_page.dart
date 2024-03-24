@@ -1,3 +1,5 @@
+// ignore_for_file: override_on_non_overriding_member, annotate_overrides, prefer_const_constructors, duplicate_ignore, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 /*import 'package:resi_gestion_app/screens/demande.dart';
 import 'package:resi_gestion_app/screens/evenements.dart';
@@ -68,6 +70,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }*/
+// ignore: must_be_immutable
 class HomePage extends StatelessWidget {
   @override
   List catnames = [
@@ -77,8 +80,11 @@ class HomePage extends StatelessWidget {
 
   ];
   List <Color> catColors = [
+// ignore: prefer_const_constructors
 Color(0xFFFFCF2F),
+// ignore: prefer_const_constructors
 Color(0xFFFC7F7F),
+// ignore: prefer_const_constructors
 Color(0xFFC884F8),
   ];
   List <Icon> catIcons = [Icon(Icons.announcement, color: Colors.white,size: 30),
@@ -86,11 +92,15 @@ Color(0xFFC884F8),
     Icon(Icons.article, color: Colors.white,size: 30),
 
   ];
+
+  HomePage({super.key});
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: [Container(
         padding: EdgeInsets.only(top: 15, left: 15,right: 15,bottom: 10),
+        // ignore: prefer_const_constructors
         decoration: BoxDecoration(color: Color.fromRGBO(21, 139, 134, 0.773),
+        // ignore: prefer_const_constructors
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(20),
           bottomRight: Radius.circular(20),
